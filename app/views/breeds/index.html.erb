@@ -1,0 +1,10 @@
+<div class="dog">
+
+  <ul class="breed-list">
+    <% @list.each do |breed, data| %>
+      <li>
+        <%= link_to breed, breed_detail_path(breed) %>
+      </li>
+    <% end %>
+  </ul>
+</div>
